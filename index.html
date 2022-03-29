@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay muted loop class="video">
+        <source type="video/mp4" src="./video/The Mountain.mp4">
+    </video>
+      <div class="title">
+        <h1 class="timerTitle">Pomodoro Timer</h1>
+      </div>
+      <div class="timerBlock">
+          <div class="timer">
+            <div class="timerWindow" id="timerWindowID">
+              <div class="timerWindow-tittle">Session</div>
+              <div class="timerCount" id="timerCount">00:00</div>
+              <div class="timerBtns">
+                <div class="btn start" id="btnStart">
+                    <i class='bx bx-right-arrow' id="startButton"></i>
+                    <i class='bx bx-pause' id="pauseButton"></i>
+                </div>
+               <div class="btn reset" id="btnReset">
+                  <i class='bx bx-reset' ></i>             
+               </div>
+              </div>
+            </div>
+          </div>
+        <div class="setTimeBlock">
+          <div class="setSessions">
+            <div class="sessionBlock">
+              <div class="sessionTitle">Session Length</div>
+              <div class="setTime" id="setSessionTime">
+                <div class="arrows" id="arrowUp"><i class='bx bx-up-arrow-alt' ></i></div>
+                <div class="changeTime" id="changeSessionTime">0 min</div>
+                <div class="arrows" id="arrowDown"> <i class='bx bx-down-arrow-alt' ></i></div>
+              </div>
+            </div>
+            <div class="sessionBlock">
+              <div class="sessionTitle">Break Length</div>
+              <div class="setTime" id="setBreakTime">
+                <div class="arrows" id="BreakArrowUp"><i class='bx bx-up-arrow-alt' ></i></div>
+                <div class="changeTime" id="changeBreakTime">0 min</div>
+                <div class="arrows" id="BreakArrowDown"> <i class='bx bx-down-arrow-alt' ></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <script src="./script.js"></script>
+  </body>
+</html>
